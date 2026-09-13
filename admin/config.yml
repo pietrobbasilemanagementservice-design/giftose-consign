@@ -1,0 +1,42 @@
+backend:
+  name: github
+  repo: pietrobbasilemanagementservice-design/giftose-consign
+  branch: main
+  squash_merges: true
+
+local_backend: false
+publish_mode: simple
+media_folder: images
+public_folder: /images
+site_url: https://giftose-consign.netlify.app
+display_url: https://giftose-consign.netlify.app
+logo_url: /images/logo.jpg
+
+collections:
+  - name: catalog
+    label: Shop
+    files:
+      - name: products
+        label: Products
+        file: data/products.json
+        fields:
+          - name: items
+            label: Items
+            widget: list
+            summary: "{{name}} — {{category}}"
+            fields:
+              - { label: ID, name: id, widget: string, hint: "Short unique code, e.g. bag-01" }
+              - { label: Name, name: name, widget: string }
+              - { label: Category, name: category, widget: select, options: ["Clothing", "Bags", "Shoes", "Jewelry", "Watches", "Electronics", "Home", "Accessories"] }
+              - { label: Condition, name: condition, widget: select, options: ["Like new", "Excellent", "Very good", "Good"] }
+              - { label: Price (naira), name: price, widget: number, value_type: int, min: 0 }
+              - { label: Photo, name: image, widget: image }
+
+      - name: settings
+        label: Site settings
+        file: data/settings.json
+        fields:
+          - { label: Brand name, name: brand, widget: string }
+          - { label: WhatsApp number, name: whatsapp, widget: string, hint: "International format, e.g. 2348012345678" }
+          - { label: Email, name: email, widget: string }
+          - { label: Seller share %, name: commission, widget: string }

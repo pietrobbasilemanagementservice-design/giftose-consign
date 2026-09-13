@@ -1,0 +1,10 @@
+{
+  "items": [
+    { "id": "bag", "name": "Cognac leather structured bag", "category": "Bags", "condition": "Excellent", "price": 85000, "image": "/images/bag.jpg" },
+    { "id": "blazer", "name": "Navy tailored blazer", "category": "Clothing", "condition": "Like new", "price": 42000, "image": "/images/blazer.jpg" },
+    { "id": "jewelry", "name": "Gold hoop & mesh watch set", "category": "Jewelry", "condition": "Excellent", "price": 38000, "image": "/images/jewelry.jpg" },
+    { "id": "sneakers", "name": "White leather sneakers", "category": "Shoes", "condition": "Very good", "price": 28000, "image": "/images/sneakers.jpg" },
+    { "id": "scarf", "name": "Printed silk scarf", "category": "Accessories", "condition": "Excellent", "price": 18500, "image": "/images/scarf.jpg" },
+    { "id": "camera", "name": "Compact digital camera", "category": "Electronics", "condition": "Good", "price": 95000, "image": "/images/camera.jpg" }
+  ]
+}
