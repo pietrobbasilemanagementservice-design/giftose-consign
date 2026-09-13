@@ -29,7 +29,7 @@ collections:
               - { label: Name, name: name, widget: string }
               - { label: Category, name: category, widget: select, options: ["Clothing", "Bags", "Shoes", "Jewelry", "Watches", "Electronics", "Home", "Accessories"] }
               - { label: Condition, name: condition, widget: select, options: ["Like new", "Excellent", "Very good", "Good"] }
-              - { label: Price (naira), name: price, widget: number, value_type: int, min: 0 }
+              - { label: Price (USD), name: price, widget: number, value_type: int, min: 0 }
               - { label: Photo, name: image, widget: image }
 
       - name: settings
